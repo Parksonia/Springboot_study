@@ -16,9 +16,9 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' //템플릿 엔진 라이브러리
+	implementation 'org.springframework.boot:spring-boot-starter-web'  // 웹 프로젝트  라이브러리
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'  //자동으로 생성됨
 }
 
 tasks.named('test') {
