@@ -1,0 +1,6 @@
+<html xmlns:th="http://www.thymeleaf.org">  <!--html을 바꿔주기 위해 타임리프 템플릿엔진 선언-->
+<body>
+<p th:text="'hello ' + ${name}">hello! empty</p>
+<!--hello! empty ->서버 없이도 절대경로 주소로 접속시 해당 내용을 볼 수 있음
+                   만약에 서버가 model에 담은 key값의 value가 들어오면 hello! empty->데이터 값으로 치환됨-->
+</body>
