@@ -5,10 +5,12 @@ import hello.hellospring.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
-// 서비스라고 등록
+// @Service : 서비스라고 등록
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;

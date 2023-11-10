@@ -15,14 +15,14 @@ class MemberServiceTest {
     MemoryMemberRepository memberRepository ;
 
     @BeforeEach  //테스트마다 테스트 시작 전  실행됨
-    public void beforeEach() {
+    public void bEeforeEach() {
 
         memberRepository = new MemoryMemberRepository();
         memberService =new MemberService(memberRepository);
 
     }
 
-    @AfterEach  //Test 메서드가 끝날때마다 실행되도록 하는 콜백메서드
+    @Afterach  //Test 메서드가 끝날때마다 실행되도록 하는 콜백메서드
     public void afterEach() {
         memberRepository.clearStore(); //데이터 싹 다 지워줌
     }
