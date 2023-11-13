@@ -22,7 +22,7 @@ class MemberServiceTest {
 
     }
 
-    @Afterach  //Test 메서드가 끝날때마다 실행되도록 하는 콜백메서드
+    @AfterEach  //Test 메서드가 끝날때마다 실행되도록 하는 콜백메서드
     public void afterEach() {
         memberRepository.clearStore(); //데이터 싹 다 지워줌
     }
